@@ -1,0 +1,203 @@
+// color //
+$main-text: #323740;
+$sub-text: #575D67;
+$pink: #DD8181;
+$orange: #E79C08;
+$light-background:#F8F8F8;
+$dark-background:#282828;
+$index-background:#FFF8F1;
+$miopane:#FFF2D0;
+$sweet:#F4DBD6;
+$echoo:#F5EFF5;
+
+// font //
+$sans:'Montserrat', 'Noto Sans TC', sans-serif;
+$pixel:'Minecraft', 'SweiAliasSansCJKtc-Regular', 'Gelasio', 'Noto Serif TC', serif;
+$serif:'Gelasio', 'Noto Serif TC', serif;
+
+@mixin paragraph-L{
+    font: {
+        family: $sans;
+        size: 22px;
+        weight:300;
+    }
+    line-height: 180%;
+    letter-spacing:calc( 22px * 0.03);
+    @media (max-width: 1100px) and (min-width: 620px){
+        font-size: 20px;
+    }
+    @media (max-width: 620px){
+        font-size: 18px;
+    }
+}
+
+@mixin paragraph-M{
+    font: {
+        family: $sans;
+        size: 20px;
+        weight:300;
+    }
+    line-height: 180%;
+    letter-spacing:calc( 20px * 0.03);
+    @media (max-width: 1100px) and (min-width: 620px){
+        font-size: 18px;
+    }
+    @media (max-width: 620px){
+        font-size: 16px;
+    }
+}
+
+@mixin paragraph-S{
+    font: {
+        family: $sans;
+        size:18px;
+        weight:300;
+    }
+    line-height: 180%;
+    letter-spacing:calc( 18px * 0.03);
+    @media (max-width: 1100px) and (min-width: 620px){
+        font-size: 16px;
+    }
+    @media (max-width: 620px){
+        font-size: 14px;
+    }
+}
+
+
+// title-M //
+
+h2{
+    font: {
+        family: $pixel;
+        size:64px;
+        weight:300;
+    }
+    letter-spacing:calc( 64px * 0.03);
+    @media (max-width: 900px) and (min-width: 600px){
+        font-size: 50px;
+    }
+    @media (max-width: 600px){
+        font-size: 46px;
+    }
+}
+
+// index work title //
+
+h3{
+    font: {
+        size:40px;
+        weight:600;
+    }
+    letter-spacing:calc( 48px * 0.03);
+
+    @media (max-width: 1100px) and (min-width: 900px){
+        font-size: 36px;
+    }
+    @media (max-width: 900px) and (min-width: 620px){
+        font-size: 32px;
+    }
+    @media (max-width: 620px){
+        font-size: 24px;
+    }
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@mixin white-border {
+    border: 3px solid white;
+    border-radius: 8px;
+    filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.1));
+}
+
+a{
+    text-decoration: none;
+    &:visited{
+        text-decoration: none;
+        color: $light-background;
+    }     
+}
+
+@keyframes a-hover{
+    from{
+        width: 0;
+    }
+    to{
+        width: 100%;
+    }
+}
+
+// enter and leave //
+
+#enter, #leave{
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+    position: fixed;
+}
+
+#enter{
+    top: 0;
+}
+
+#leave{
+    top: 100vh;
+}
+
+@keyframes leave{
+    from{
+        top:100vh;
+    }
+    to{
+        top:0;
+    }
+}
+
+@keyframes enter{
+    from{
+        top:0;
+    }
+    to{
+        top:100vh;
+    }
+}
+
+.go-top{
+    cursor: pointer;
+    z-index: 1;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    background-color: white;
+    border-radius: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.1));
+    svg{
+        transform: rotate(-90deg);
+        width: 30px;
+    }
+
+    @media (max-width: 750px) and (min-width: 300px){
+        right: 30px;
+        bottom: 30px;
+    }
+
+    @media (max-width: 600px){
+        width: 45px;
+        height: 45px;
+    }
+
+    @media (max-width: 500px){
+        right: 20px;
+        bottom: 20px;
+    }
+}
+

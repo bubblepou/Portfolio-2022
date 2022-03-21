@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>哈囉，我是梁嘉寶</title>
+
+    <link rel="stylesheet" type="text/css" href="./index.css" media="screen">
+
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Gelasio:wght@600&family=Montserrat:wght@300;400&family=Noto+Sans+TC:wght@300;400&family=Noto+Serif+TC:wght@600&display=swap"
+        rel="stylesheet">
+    
+    <style>
+        @font-face {
+            font-family: SweiAliasSansCJKtc-Regular;
+            src: url(https://cdn.jsdelivr.net/gh/max32002/swei-alias-sans@2.0/WebFont/CJK%20TC/SweiAliasSansCJKtc-Regular.woff2) format("woff2"), url(https://cdn.jsdelivr.net/gh/max32002/swei-alias-sans@2.0/WebFont/CJK%20TC/SweiAliasSansCJKtc-Regular.woff) format("woff");
+        }
+
+        @font-face {
+            font-family: Minecraft;
+            src: url(./font/@font-face/Minecraft.eot),
+                /* IE9*/
+                url(./font/@font-face/Minecraft.woff2) format("woff2"),
+                /* chrome、firefox */
+                url(./font/@font-face/Minecraft.woff) format("woff"),
+                /* chrome、firefox */
+                url(./font/@font-face/Minecraft.ttf) format("truetype"),
+                /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+                url(./font/@font-face/Minecraft.svg) format("svg");
+            /* iOS 4.1- */
+        }
+    </style>
+</head>
+
+<body onload="enter()">
+    <div class="intro">
+        <h1>哈囉，我是梁嘉寶</h1>
+        <p class="p-L">在這裡您可以看到我的作品，當中展示了 UI / 網頁設計、前端編程、插畫排版等多項技能，希望您看得愉快！</p>
+        <div class="vertical-line"></div>
+    </div>
+
+    <div class="circle-Box">
+        <img src="./image/Po.png">
+        <div id="circle-text">WELCOME TO MY PORTFOLIO ＊ WELCOME TO MY PORTFOLIO ＊ &nbsp; </div>
+    </div>
+
+    <div class="two-navigations">
+        <div class='navigation'>
+            <img src="./image/star1.png">
+            <ul>
+                <span class="hover-line" id="hoverLine">WORK</span>
+                <li class="hover-line">UI / Website Design</li>
+                <li class="hover-line">前端編程</li>
+                <li class="hover-line">書刊雜誌</li>
+                <li class="hover-line">插畫及標準字</li>
+            </ul>
+        </div>
+        <div class='navigation'>
+            <img src="./image/star2.png">
+            <ul>
+                <span class="hover-line">ABOUT</span>
+            </ul>
+        </div>
+    </div>
+
+    <div class="work-box scrollTo" id="first-work">
+        <div class="work" data-href="./miopane.html" data-color="#FFF2D0" >
+            <div class="work-intro">
+                <p>UI / Website Design</p>
+                <h3>Miopane</h3>
+                <p>整理了混亂的網站架構和層級關係，強調品牌健康素食的特色，讓整個網站有美感同時兼具實用性。</p>
+            </div>
+            <div class="work-image">
+                <img src="./image/index/Miopane.jpeg">
+                <!--span>Phone Version
+                <img src="./image/icon/Plus.png">
+            </span-->
+            </div>
+        </div>
+        <a class="tag"
+            href="https://www.figma.com/proto/uyobwSFG3bQ234mx1sYGNJ/miopane-website?page-id=188%3A712&node-id=208%3A1513&starting-point-node-id=208%3A1513&scaling=scale-down-width">
+            <svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M25.3125 12.545V5.51367H18.2812" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                <path d="M16.875 13.9512L25.3125 5.51367" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                <path
+                    d="M21.5625 17.7012V25.2012C21.5625 25.4499 21.4637 25.6883 21.2879 25.8641C21.1121 26.04 20.8736 26.1387 20.625 26.1387H5.625C5.37636 26.1387 5.1379 26.04 4.96209 25.8641C4.78627 25.6883 4.6875 25.4499 4.6875 25.2012V10.2012C4.6875 9.95253 4.78627 9.71408 4.96209 9.53826C5.1379 9.36244 5.37636 9.26367 5.625 9.26367H13.125"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <span>View on Figma</span>
+        </a>
+    </div>
+
+    <div class="work-box scrollTo">
+        <a class="work" data-href="./sweet.html" data-color="#F4DBD6">
+            <div class="work-intro">
+                <p>前端編程</p>
+                <h3>甜報</h3>
+                <p>把戀愛遊戲的概念與新聞網站融合的作品，希望能透過有趣好玩的閱讀體驗，吸引人們閱讀新聞。</p>
+            </div>
+            <div class="work-image">
+                <img src="./image/index/sweet.jpeg">
+                <!--span>Phone Version
+                <img src="./image/icon/Plus.png">
+            </span-->
+            </div>
+        </a>
+        <a class="tag" href="https://bubblepou.github.io/remake-sweet-news/home">
+            <svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M25.3125 12.545V5.51367H18.2812" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                <path d="M16.875 13.9512L25.3125 5.51367" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                <path
+                    d="M21.5625 17.7012V25.2012C21.5625 25.4499 21.4637 25.6883 21.2879 25.8641C21.1121 26.04 20.8736 26.1387 20.625 26.1387H5.625C5.37636 26.1387 5.1379 26.04 4.96209 25.8641C4.78627 25.6883 4.6875 25.4499 4.6875 25.2012V10.2012C4.6875 9.95253 4.78627 9.71408 4.96209 9.53826C5.1379 9.36244 5.37636 9.26367 5.625 9.26367H13.125"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <span>View on github</span>
+        </a>
+    </div>
+
+    <div class="work-box scrollTo">
+        <a class="work" data-href="./echoo.html" data-color="#F5EFF5" onclick="leave()">
+            <div class="work-intro">
+                <p>書刊雜誌</p>
+                <h3>echoo</h3>
+                <p>以聽眾和歌曲為中心的音樂雜誌，訴說每個人心中獨特的那首歌、那個故事。</p>
+            </div>
+            <div class="work-image">
+                <img src="./image/index/echoo.jpeg">
+            </div>
+        </a>
+        <a class="tag" href="https://issuu.com/siu_star124/docs/echoo______">
+            <svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M25.3125 12.545V5.51367H18.2812" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                <path d="M16.875 13.9512L25.3125 5.51367" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                <path
+                    d="M21.5625 17.7012V25.2012C21.5625 25.4499 21.4637 25.6883 21.2879 25.8641C21.1121 26.04 20.8736 26.1387 20.625 26.1387H5.625C5.37636 26.1387 5.1379 26.04 4.96209 25.8641C4.78627 25.6883 4.6875 25.4499 4.6875 25.2012V10.2012C4.6875 9.95253 4.78627 9.71408 4.96209 9.53826C5.1379 9.36244 5.37636 9.26367 5.625 9.26367H13.125"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <span>View on issuu</span>
+        </a>
+    </div>
+
+    <div class="illustration-box scrollTo">
+        <p>插畫及標準字</p>
+        <div class="illustrations">
+            <img onclick="openModal();currentSlide(1)" src="./image/index/illistration/1.png">
+            <img onclick="openModal();currentSlide(2)" src="./image/index/illistration/2.png">
+            <img onclick="openModal();currentSlide(3)" src="./image/index/illistration/3.png">
+            <img onclick="openModal();currentSlide(4)" src="./image/index/illistration/4.png">
+            <img onclick="openModal();currentSlide(5)" src="./image/index/illistration/5.png">
+            <img onclick="openModal();currentSlide(6)" src="./image/index/illistration/6.png">
+            <img onclick="openModal();currentSlide(7)" src="./image/index/illistration/7.png">
+        </div>
+    </div>
+
+    <div id="myModal" class="modal">
+        <svg class="close cursor" onclick="closeModal()" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M22.125 1.875L1.875 22.125" stroke="black" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            <path d="M22.125 22.125L1.875 1.875" stroke="black" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+        </svg>
+
+        <div class="modal-content">
+
+            <div class="mySlides">
+                <div class="numbertext">1 / 7</div>
+                <img src="./image/index/illistration/1.png">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">2 / 7</div>
+                <img src="./image/index/illistration/2.png">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">3 / 7</div>
+                <img src="./image/index/illistration/3.png">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">4 / 7</div>
+                <img src="./image/index/illistration/4.png">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">5 / 7</div>
+                <img src="./image/index/illistration/5.png">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">6 / 7</div>
+                <img src="./image/index/illistration/6.png">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">7 / 7</div>
+                <img src="./image/index/illistration/7.png">
+            </div>
+
+            <!-- Next/previous controls -->
+            <svg class="prev" onclick="plusSlides(-1)" transform="rotate(180)" width="33" height="32"
+                viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.9062 6L22.9062 16L12.9062 26" stroke="black" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
+            <svg class="next" onclick="plusSlides(1)" width="33" height="32" viewBox="0 0 33 32" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.9062 6L22.9062 16L12.9062 26" stroke="black" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
+
+        </div>
+    </div>
+
+    <div class="scrollTo about-box">
+        <div class="about" id="about">
+            <div class="about-text">
+                <h1>我是誰？</h1>
+                <p>您好，我是梁嘉寶，來自澳門，畢業於政治大學廣告系，擅長平面、UI、網頁等視覺設計，熟悉HTML、CSS等編程基礎，能與工程師溝通。
+                    <br><br>
+                    我的責任感強、與人相處融洽，目前正在尋找與 UI / 網頁設計有關的工作，如果您有任何疑問，歡迎電郵聯繫我！
+                </p>
+            </div>
+            <div class="about-photo">
+                <img>
+                <img src="./image/index/nice to meet you.png">
+            </div>
+        </div>
+        <div class="ability">
+            <div>
+                <img src="./image/index/school.png">
+                <span>學歷</span>
+                <p>國立政治大學<br>
+                    主修｜廣告系 傳播與設計主修<br>
+                    輔系｜日本語文學系</p>
+            </div>
+            <div>
+                <img src="./image/index/skill.png">
+                <span>技能</span>
+                <p>熟練｜Figma．PS．AI．ID<br>
+                    中等｜HTML．CSS<br>
+                    普通｜PR．AE．JavaScript</p>
+            </div>
+            <div>
+                <img src="./image/index/language.png">
+                <span>語言</span>
+                <p>流利｜廣東話．國語．日語<br>
+                    基礎｜英語．韓語</p>
+            </div>
+        </div>
+        <div class="contact">
+            <h3>趕緊聯絡我吧</h3>
+            <h3>kapouwork@gmail.com</h3>
+        </div>
+    </div>
+
+    <!--div class="goTop">
+        <svg width="33" height="32" viewBox="0 0 33 32" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.9062 6L22.9062 16L12.9062 26" stroke="black" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+        </svg>
+    </div-->
+
+    <div class="go-top" onclick="goTop()">
+        <svg width="33" height="32" viewBox="0 0 33 32" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.9062 6L22.9062 16L12.9062 26" stroke="black" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
+    </div>
+
+    <div id="enter"></div>
+    <div id="leave"></div>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>

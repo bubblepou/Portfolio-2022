@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>甜報</title>
+
+    <link rel="stylesheet" type="text/css" href="./echoo.css" media="screen">
+
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Gelasio:wght@600&family=Montserrat:wght@300;400&family=Noto+Sans+TC:wght@300;400&family=Noto+Serif+TC:wght@600&display=swap"
+        rel="stylesheet">
+
+    <style>
+        @font-face {
+            font-family: SweiAliasSansCJKtc-Regular;
+            src: url(https://cdn.jsdelivr.net/gh/max32002/swei-alias-sans@2.0/WebFont/CJK%20TC/SweiAliasSansCJKtc-Regular.woff2) format("woff2"), url(https://cdn.jsdelivr.net/gh/max32002/swei-alias-sans@2.0/WebFont/CJK%20TC/SweiAliasSansCJKtc-Regular.woff) format("woff");
+        }
+        
+        @font-face {
+            font-family: Minecraft;
+            src: url(./font/@font-face/Minecraft.eot),
+                /* IE9*/
+                url(./font/@font-face/Minecraft.woff2) format("woff2"),
+                /* chrome、firefox */
+                url(./font/@font-face/Minecraft.woff) format("woff"),
+                /* chrome、firefox */
+                url(./font/@font-face/Minecraft.ttf) format("truetype"),
+                /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+                url(./font/@font-face/Minecraft.svg) format("svg");
+            /* iOS 4.1- */
+        }
+    </style>
+</head>
+
+<body onload="enter()">
+    <h2>echoo</h2>
+    <img class="scroll-img" src="./image/echoo/echoo_1.png">
+    <div class="background"></div>
+
+    <div class="intro">
+        <div>
+            <h4>簡介</h4>
+            <p>以聽眾和歌曲為中心的音樂雜誌，重視人與歌之間的故事，從聽眾的角度出發，訴說每個人心中獨特的那首歌、那個故事。就像迴聲一樣，當我們聆聽歌曲時，歌曲也在回應我們的心聲。</p>
+        </div>
+        <div>
+            <h4>組員</h4>
+            <div>
+                <span>楊瑞盈</span>
+                <span>劉書妤</span>
+            </div>
+        </div>
+        <div>
+            <h4>擔當</h4>
+            <div>
+                <span>插畫</span>
+                <span>排版</span>
+                <span>部分內容</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="process">
+        <div class="text">
+            <h4>構思與製作</h4>
+            <p>大部分音樂雜誌都是從歌手、唱片公司的角度出發，通常會以歌手的採訪、介紹流行歌曲等內容為主，而我們則以聽眾的角度出發，訪問大家與歌曲有關的故事、解析各種歌曲的意義等。</p>
+        </div>
+        <img src="./image/echoo/echoo_2.png" id="process_image">
+    </div>
+
+    <div class="display">
+        <video autoplay loop>
+            <source src="./vedio/sweet.mov" type="video/mp4">
+        </video>
+    </div>
+
+    <div class="mockup">
+        <img src="./image/echoo/echoo_4.png">
+        <img src="./image/echoo/echoo_5.png">
+        <img src="./image/echoo/echoo_6.png">
+        <img src="./image/echoo/echoo_7.png">
+    </div>
+
+    <div class="next-work" id="next" data-color="#F5EFF5" data-href="./echoo.html">
+        <div>
+            <h3>Next Work</h3>
+            <h2>插畫及標準字</h2>
+        </div>
+        <div class="next-work-img">
+            <img src="./image/index/illistration/1.png">
+            <img src="./image/index/illistration/5.png">
+        </div>
+    </div>
+
+    <div class="icons">
+        <div class="icons-img">
+            <img src="./image/icon/List.png">
+            <div class="icons-text" data-opacity="a">
+                <svg class="menuClose" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M22.125 1.875L1.875 22.125" stroke="black" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path d="M22.125 22.125L1.875 1.875" stroke="black" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+
+                <a class='goHome' data-href="./index.html ">HOME</a>
+                <a class='goHome' data-href="./index.html#first-work">WORK</a>
+                <a class='goHome' data-href="./index.html#about">ABOUT</a>
+            </div>
+        </div>
+        <div class="icons-img">
+            <img src="./image/icon/ArrowSquareOut.svg">
+            <div class="icons-text" data-opacity="a">
+                <svg class="menuClose" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M22.125 1.875L1.875 22.125" stroke="black" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path d="M22.125 22.125L1.875 1.875" stroke="black" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+                
+                <a
+                    href="https://issuu.com/siu_star124/docs/echoo______">
+                    VIEW ON ISSUU</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="go-top" onclick="goTop()">
+        <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12.9062 6L22.9062 16L12.9062 26" stroke="black" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+        </svg>
+    </div>
+
+    <div id="enter"></div>
+    <div id="leave"></div>
+
+    <script src="./content.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+@import "variable";
+@import "content";
+
+.background{
+    background-color: $echoo;
+}
+
+// enter and leave //
+
+#enter{
+    background-color: $echoo;
+}
+
+#leave{
+    background-color: $echoo;
+}
+
+// video // 
+
+.display{
+    width: fit-content;
+    margin: 150px auto;
+    video{
+        border-radius: 8px;
+        width: 86vw;
+        @media (max-width: 500px) {
+            width: 100vw;
+            border-radius: 0;
+        }
+    }
+}
+
+.mockup{
+    img{
+        display: block;
+        margin: auto;
+        width: 86vw;
+        height: 500px;
+        object-fit: cover;
+        margin-bottom: 50px;
+        @media (max-width: 800px) and (min-width: 600px){
+            height: 350px;
+        }
+        @media (max-width: 600px) and (min-width: 400px){
+            height: 250px;
+        }
+        @media (max-width: 400px){
+            height: 160px;
+        }
+    }
+}
+
+// process //
+
+.process{
+    p{
+        margin-bottom: 100px;
+        @media (max-width: 600px){
+            margin-bottom: 60px;
+        }
+    }
+    img{
+        top: 0;
+        margin-bottom: 100px;
+        @media (max-width: 600px){
+            margin-bottom: 0;
+        }
+    }
+}
+
+// next work //
+
+.next-work{
+    .next-work-img{
+        img{
+            width: 18vw;
+            background-color: $light-background;
+            &:first-child{
+                margin-right: 20px;
+                @media (max-width: 750px) and (min-width: 600px){
+                    margin-right: 10px;
+                }
+            }
+            @media (max-width: 600px){
+                width: 35vw;
+            }
+            
+        }
+    }
+    h2{
+        @media (max-width: 900px) and (min-width: 750px){
+            font-size: 50px;
+        }
+        @media (max-width: 750px) and (min-width: 600px){
+            font-size: 42px;
+        }
+        @media (max-width: 600px){
+            font-size: 46px;
+        }
+    }
+}

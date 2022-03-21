@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>甜報</title>
+
+    <link rel="stylesheet" type="text/css" href="./sweet.css" media="screen">
+
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Gelasio:wght@600&family=Montserrat:wght@300;400&family=Noto+Sans+TC:wght@300;400&family=Noto+Serif+TC:wght@600&display=swap"
+        rel="stylesheet">
+   
+    <style>
+        @font-face {
+            font-family: SweiAliasSansCJKtc-Regular;
+            src: url(https://cdn.jsdelivr.net/gh/max32002/swei-alias-sans@2.0/WebFont/CJK%20TC/SweiAliasSansCJKtc-Regular.woff2) format("woff2"), url(https://cdn.jsdelivr.net/gh/max32002/swei-alias-sans@2.0/WebFont/CJK%20TC/SweiAliasSansCJKtc-Regular.woff) format("woff");
+        }
+
+        @font-face {
+            font-family: Minecraft;
+            src: url(./font/@font-face/Minecraft.eot),
+                /* IE9*/
+                url(./font/@font-face/Minecraft.woff2) format("woff2"),
+                /* chrome、firefox */
+                url(./font/@font-face/Minecraft.woff) format("woff"),
+                /* chrome、firefox */
+                url(./font/@font-face/Minecraft.ttf) format("truetype"),
+                /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+                url(./font/@font-face/Minecraft.svg) format("svg");
+            /* iOS 4.1- */
+        }
+    </style>
+</head>
+
+<body onload="enter()">
+    <h2>甜報</h2>
+    <img class="scroll-img" src="./image/sweet/Desktop_index2.png">
+    <div class="background"></div>
+
+    <div class="intro">
+        <div>
+            <h4>簡介</h4>
+            <p>甜報是把戀愛遊戲與新聞融合的作品，我們以組員撰寫的新聞為內容，結合戀愛遊戲的概念，希望能以帥氣可愛的角色吸引沒有閱讀習慣的人閱讀新聞，帶來有趣好玩的閱讀體驗。</p>
+        </div>
+        <div>
+            <h4>組員</h4>
+            <div>
+                <span>楊瑞盈</span>
+                <span>陳心純</span>
+            </div>
+        </div>
+        <div>
+            <h4>擔當</h4>
+            <div>
+                <span>UI / Website Design</span>
+                <span>前端編程</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="process">
+        <div class="text">
+            <h4>構思與製作</h4>
+            <p>新聞網站大多都是正經嚴肅的，但要吸引較少關心時事的人瀏覽，我們想到如果把戀愛遊戲與新聞融合應該會很有趣。
+                <br><br>
+                因為這是我們第一次編寫網站，很可惜未能做到更多與使用者互動的功能，但最終完成了電腦、平板、手機都可以使用的RWD網站，以及三種角色主題。</p>
+            <div class="navigation">
+                <span class="process_number">首頁</span>
+                <svg width="302" height="19" viewBox="0 0 302 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 18H301.5L284.5 1" stroke="#F8F8F8" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <span class="process_number">內文</span>
+            </div>
+        </div>
+        <img src="./image/sweet/description-1.png" id="process_image">
+    </div>
+
+    <div class="display">
+        <video autoplay loop>
+            <source src="./vedio/sweet.mp4" type="video/mp4">
+        </video>
+        <div>
+            <video autoplay loop>
+                <source src="./vedio/sweet2.mp4" type="video/mp4">
+            </video>
+            <video autoplay loop>
+                <source src="./vedio/sweet3.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
+    <div class="next-work" id="next" data-color="#F5EFF5" data-href="./echoo.html">
+        <div>
+            <h3>Next Work</h3>
+            <h2>echoo</h2>
+        </div>
+        <img src="./image/index/echoo.jpeg">
+    </div>
+
+    <div class="icons">
+        <div class="icons-img">
+            <img src="./image/icon/List.png">
+            <div class="icons-text" data-opacity="a">
+                <svg class="menuClose" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M22.125 1.875L1.875 22.125" stroke="black" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path d="M22.125 22.125L1.875 1.875" stroke="black" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+
+                <a class='goHome' data-href="./index.html ">HOME</a>
+                <a class='goHome' data-href="./index.html#first-work">WORK</a>
+                <a class='goHome' data-href="./index.html#about">ABOUT</a>
+            </div>
+        </div>
+        <div class="icons-img">
+            <img src="./image/icon/ArrowSquareOut.svg">
+            <div class="icons-text" data-opacity="a">
+                <svg class="menuClose" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M22.125 1.875L1.875 22.125" stroke="black" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path d="M22.125 22.125L1.875 1.875" stroke="black" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+                
+                <a
+                    href="https://bubblepou.github.io/remake-sweet-news/home">
+                    VIEW ON GITHUB</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="go-top" onclick="goTop()">
+        <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12.9062 6L22.9062 16L12.9062 26" stroke="black" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+        </svg>
+    </div>
+
+    <div id="enter"></div>
+    <div id="leave"></div>
+
+    <script src="./content.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,178 @@
+h2 {
+  font-family: "Minecraft", "SweiAliasSansCJKtc-Regular", "Gelasio", "Noto Serif TC", serif;
+  font-size: 64px;
+  font-weight: 300;
+  letter-spacing: calc( 64px * 0.03);
+}
+
+@media (max-width: 900px) and (min-width: 600px) {
+  h2 {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 600px) {
+  h2 {
+    font-size: 46px;
+  }
+}
+
+h3 {
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: calc( 48px * 0.03);
+}
+
+@media (max-width: 1100px) and (min-width: 900px) {
+  h3 {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 900px) and (min-width: 620px) {
+  h3 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 620px) {
+  h3 {
+    font-size: 24px;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #F8F8F8;
+}
+
+@-webkit-keyframes a-hover {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes a-hover {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+#enter, #leave {
+  width: 100vw;
+  height: 100vh;
+  z-index: 10;
+  position: fixed;
+}
+
+#enter {
+  top: 0;
+}
+
+#leave {
+  top: 100vh;
+}
+
+@-webkit-keyframes leave {
+  from {
+    top: 100vh;
+  }
+  to {
+    top: 0;
+  }
+}
+
+@keyframes leave {
+  from {
+    top: 100vh;
+  }
+  to {
+    top: 0;
+  }
+}
+
+@-webkit-keyframes enter {
+  from {
+    top: 0;
+  }
+  to {
+    top: 100vh;
+  }
+}
+
+@keyframes enter {
+  from {
+    top: 0;
+  }
+  to {
+    top: 100vh;
+  }
+}
+
+.go-top {
+  cursor: pointer;
+  z-index: 1;
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  background-color: white;
+  border-radius: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.1));
+          filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.1));
+}
+
+.go-top svg {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  width: 30px;
+}
+
+@media (max-width: 750px) and (min-width: 300px) {
+  .go-top {
+    right: 30px;
+    bottom: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .go-top {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+@media (max-width: 500px) {
+  .go-top {
+    right: 20px;
+    bottom: 20px;
+  }
+}
+/*# sourceMappingURL=variable.css.map */

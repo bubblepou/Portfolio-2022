@@ -1,0 +1,93 @@
+@import "variable";
+@import "content";
+
+.background{
+    background-color: $sweet;
+}
+
+.next-work{
+    background-color: $echoo;
+}
+
+.display{
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between;
+    width: fit-content;
+    margin: 150px auto;
+    video{
+        border-radius: 8px;
+    }
+    div{ 
+        margin-top: 100px;
+        display: flex;
+        justify-content: space-evenly;
+        video{
+            &:nth-child(1), &:nth-child(2){
+                height: 70vh;
+            }
+        }
+        @media (max-width: 1000px) and (min-width: 800px) {
+            justify-content: space-around;
+            video{
+                &:nth-child(1), &:nth-child(2){
+                    height: 65vh;
+                }
+            }
+        }
+        @media (max-width: 800px) and (min-width: 700px) {
+            justify-content: space-between;
+            video{
+                &:nth-child(1), &:nth-child(2){
+                    height: 60vh;
+                }
+            }
+        }
+        @media (max-width: 700px) and (min-width: 600px) {
+            justify-content: space-between;
+            video{
+                &:nth-child(1), &:nth-child(2){
+                    height: 53vh;
+                }
+            }
+        }
+        @media (max-width: 600px) and (min-width: 500px) {
+            justify-content: space-between;
+            video{
+                &:nth-child(1), &:nth-child(2){
+                    height: 45vh;
+                }
+            }
+        }
+        @media (max-width: 500px) {
+            flex-direction: column;
+            align-items: center;
+            video{
+                &:nth-child(1), &:nth-child(2){
+                    height: auto;
+                    width: 70vw;
+                }
+                &:nth-child(2){
+                    margin-top: 100px;
+                }
+            }
+        }
+    }
+    > video{
+        width: 86vw;
+        @media (max-width: 500px) {
+            width: 100vw;
+            border-radius: 0;
+        }
+    }
+}
+
+// enter and leave //
+
+#enter{
+    background-color: $sweet;
+}
+
+#leave{
+    background-color: $sweet;
+}
