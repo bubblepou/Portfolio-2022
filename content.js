@@ -90,3 +90,12 @@ closeBtn.forEach((element, index) => {
         }
     })
 })
+
+// video play // 
+
+let video = document.querySelectorAll('video');
+
+video.forEach((element)=>{
+    element.play();
+    element.loop = true;
+})
