@@ -795,12 +795,12 @@ h1 {
   color: #E79C08;
 }
 
-.illustration-box {
+#illustration-box {
   margin-top: 400px;
   padding-top: 100px;
 }
 
-.illustration-box p {
+#illustration-box p {
   position: relative;
   left: 7vw;
   width: 20vw;
@@ -816,29 +816,29 @@ h1 {
 }
 
 @media (max-width: 1100px) and (min-width: 620px) {
-  .illustration-box p {
+  #illustration-box p {
     font-size: 20px;
   }
 }
 
 @media (max-width: 620px) {
-  .illustration-box p {
+  #illustration-box p {
     font-size: 18px;
   }
 }
 
-.illustration-box .illustrations {
+#illustration-box .illustrations {
   width: 100vw;
   padding: 10px 0;
   overflow: auto;
   white-space: nowrap;
 }
 
-.illustration-box .illustrations::-webkit-scrollbar {
+#illustration-box .illustrations::-webkit-scrollbar {
   display: none;
 }
 
-.illustration-box .illustrations img {
+#illustration-box .illustrations img {
   cursor: pointer;
   margin-right: 20px;
   width: 250px;
@@ -852,15 +852,15 @@ h1 {
   transition: all 0.3s;
 }
 
-.illustration-box .illustrations img:first-child {
+#illustration-box .illustrations img:first-child {
   margin-left: 7vw;
 }
 
-.illustration-box .illustrations img:last-child {
+#illustration-box .illustrations img:last-child {
   margin-right: 7vw;
 }
 
-.illustration-box .illustrations img:hover {
+#illustration-box .illustrations img:hover {
   border: 3px solid white;
   border-radius: 8px;
   -webkit-filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.1));
@@ -1096,8 +1096,8 @@ h1 {
 }
 
 .prev {
-  -webkit-transition: rotate(90deg);
-  transition: rotate(90deg);
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .numbertext {

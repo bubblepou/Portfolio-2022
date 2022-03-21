@@ -313,7 +313,7 @@ h1{
 
 // illustration //
 
-.illustration-box{
+#illustration-box{
     margin-top: 400px;
     padding-top: 100px;
     p{
@@ -518,7 +518,7 @@ h1{
 }
 
 .prev{
-    transition: rotate(90deg);
+    transform: rotate(180deg);
 }
 
 .numbertext {

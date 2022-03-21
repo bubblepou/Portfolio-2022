@@ -31,6 +31,7 @@
 }
 
 .mockup{
+    margin-top: 200px;
     img{
         display: block;
         margin: auto;
@@ -71,10 +72,11 @@
 // next work //
 
 .next-work{
+    background-color: $index-background;
     .next-work-img{
         img{
             width: 18vw;
-            background-color: $light-background;
+            background-color: white;
             &:first-child{
                 margin-right: 20px;
                 @media (max-width: 750px) and (min-width: 600px){
