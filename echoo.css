@@ -578,7 +578,6 @@ h2:first-child {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  color: #F8F8F8;
 }
 
 @media (max-width: 750px) and (min-width: 300px) {
@@ -617,6 +616,7 @@ h2:first-child {
 .icons .icons-text {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+  overflow: hidden;
   opacity: 0;
   width: 54px;
   padding: 0;
@@ -644,7 +644,7 @@ h2:first-child {
   font-weight: 300;
   line-height: 180%;
   letter-spacing: calc( 18px * 0.03);
-  color: #F8F8F8;
+  color: black;
   white-space: nowrap;
 }
 
@@ -682,6 +682,7 @@ h2:first-child {
   font-weight: 300;
   line-height: 180%;
   letter-spacing: calc( 18px * 0.03);
+  color: black;
   white-space: nowrap;
   margin: 0 20px;
 }
@@ -718,6 +719,14 @@ h2:first-child {
   width: -moz-fit-content;
   width: fit-content;
   padding: 0 60px 0 20px;
+}
+
+.icons-img:hover .icons-text a {
+  color: #F8F8F8;
+}
+
+.icons-img:hover .icons-text span {
+  color: #F8F8F8;
 }
 
 @media (max-width: 900px) and (min-width: 300px) {
@@ -895,8 +904,8 @@ h2:first-child {
     top: -80px;
   }
   .icons .icons-text {
-    -webkit-transition: none;
-    transition: none;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
     opacity: 1;
     width: 100vw !important;
     height: 100vh !important;
@@ -914,21 +923,23 @@ h2:first-child {
     z-index: 10;
   }
   .icons .icons-text a {
+    color: #F8F8F8;
     font-size: 20px;
   }
   .icons .icons-text span {
+    color: #F8F8F8;
     font-size: 20px;
   }
   .icons .icons-text .menuClose {
     display: block;
   }
-  .icons-img:hover .icons-text {
-    opacity: 1;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    padding: 0 60px 0 20px;
-  }
+  /*.icons-img:hover{
+        .icons-text{
+            opacity: 1;
+            width: fit-content;
+            padding: 0 60px 0 20px;
+        }
+    }*/
 }
 
 @-webkit-keyframes menuIn {
@@ -1000,6 +1011,12 @@ h2:first-child {
 
 .mockup {
   margin-top: 200px;
+}
+
+@media (max-width: 600px) {
+  .mockup {
+    margin-top: 150px;
+  }
 }
 
 .mockup img {

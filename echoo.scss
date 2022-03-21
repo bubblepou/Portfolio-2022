@@ -32,6 +32,9 @@
 
 .mockup{
     margin-top: 200px;
+    @media (max-width: 600px) {
+        margin-top: 150px;
+    }
     img{
         display: block;
         margin: auto;

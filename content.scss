@@ -176,7 +176,6 @@ h2:first-child{
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    color: $light-background;
     @media (max-width: 750px) and (min-width: 300px){
         right: 30px;
         top: 30px;
@@ -205,6 +204,7 @@ h2:first-child{
     } 
     .icons-text{
         transition: all 0.5s;
+        overflow: hidden;
         opacity: 0;
         width: 54px;
         padding: 0;
@@ -222,7 +222,8 @@ h2:first-child{
             margin: 0 20px;
             text-align: right;
             @include paragraph-S();
-            color: $light-background;
+            //color: $light-background;
+            color: black;
             white-space: nowrap;
             &::after{
                 content: "";
@@ -240,6 +241,8 @@ h2:first-child{
         }
         span{
             @include paragraph-S();
+            //color: $light-background;
+            color: black;
             white-space: nowrap;
             margin: 0 20px;
         }
@@ -263,6 +266,12 @@ h2:first-child{
         opacity: 1;
         width: fit-content;
         padding: 0 60px 0 20px;
+        a{
+            color: $light-background;
+        }
+        span{
+            color: $light-background;
+        }
     }
 }
 
@@ -445,8 +454,8 @@ h2:first-child{
         }
 
         .icons-text{
-            //transition: all 0.3s;
-            transition: none;
+            transition: all 0.3s;
+            //transition: none;
             opacity: 1;
             width: 100vw !important;
             height: 100vh !important;
@@ -461,9 +470,11 @@ h2:first-child{
             z-index: 10;
             //animation: menuIn 1s forwards;
             a{
+                color: $light-background;
                 font-size: 20px;
             }
             span{
+                color: $light-background;
                 font-size: 20px;
             }
             .menuClose{
@@ -472,13 +483,14 @@ h2:first-child{
         }
     }
 
-    .icons-img:hover{
+    /*.icons-img:hover{
         .icons-text{
             opacity: 1;
             width: fit-content;
             padding: 0 60px 0 20px;
         }
-    }
+    }*/
+    
 
 }
 
