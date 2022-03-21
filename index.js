@@ -106,7 +106,7 @@ let leaveBox = document.querySelector('#leave');
 works.forEach( (element) =>{
     element.addEventListener('click', function leave(){
         leaveBox.style.backgroundColor = element.getAttribute('data-color');
-        leaveBox.style.animation = 'leave 0.5s forwards';
+        leaveBox.style.animation = 'leave 0.5s';//forwards
         setTimeout(()=>{document.location.href=element.getAttribute('data-href');},500)
     });
     element.addEventListener('mouseenter', ()=>{

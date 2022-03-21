@@ -136,16 +136,17 @@ a{
 #enter, #leave{
     width: 100vw;
     height: 100vh;
-    z-index: 10;
     position: fixed;
 }
 
 #enter{
     top: 0;
+    z-index: 21;
 }
 
 #leave{
     top: 100vh;
+    z-index: 20;
 }
 
 @keyframes leave{
