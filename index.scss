@@ -47,7 +47,13 @@ h1{
     margin-bottom: 20px;
 }
 
-.intro h1{
+.intro{
+
+    div:first-child{
+        width: fit-content;
+    }
+
+    h1{
     opacity: 1;
     overflow: auto;
     white-space: nowrap;
@@ -56,9 +62,10 @@ h1{
     &::-webkit-scrollbar {
         display: none;
     }
+    }
 }
 
-@keyframes typing{
+/*@keyframes typing{
     0%{width: 0;}
     12%{width: 68px;}
     24%{width: 136px;}
@@ -68,8 +75,21 @@ h1{
     72%{width: 408px;}
     84%{width: 476px;}
     100%{width: fit-content;}
+}*/
+
+@keyframes typing{
+    0%{width: 0;}
+    12.5%{width: 12.5%;}
+    25%{width: 25%;}
+    37.5%{width: 37.5%;}
+    50%{width: 50%;}
+    62.5%{width: 62.5%;}
+    75%{width: 75%;}
+    87.5%{width: 87.5%;}
+    100%{width: 100%;}
 }
 
+/*
 @keyframes typing_60px{
     0%{width: 0;}
     12%{width: 60px;}
@@ -93,6 +113,7 @@ h1{
     84%{width: 252px;}
     100%{width: fit-content;}
 }
+*/
 
 
 .p-L{
@@ -551,9 +572,9 @@ h1{
         font-size: 60px;
     }
     
-    .intro h1{
+    /*.intro h1{
         animation-name: typing_60px;
-    }
+    }*/
 
     .navigation{
         img{
@@ -597,9 +618,9 @@ h1{
         font-size: 60px;
     }
     
-    .intro h1{
+    /*.intro h1{
         animation-name: typing_60px;
-    }
+    }*/
 
     .navigation{
         img{
@@ -768,9 +789,9 @@ h1{
         font-size: 36px;
     }
     
-    .intro h1{
+    /*.intro h1{
         animation-name: typing_36px;
-    }
+    }*/
 
     .two-navigations{
         position: static;
@@ -785,10 +806,10 @@ h1{
     }
 
 
-    .hover-line{
+    /*.hover-line{
         margin-top: 0 !important;
         margin-right: 20px;
-    }
+    }*/
 
     .circle-Box{
         position: static;
@@ -843,7 +864,7 @@ h1{
         filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.1));
     }
 
-    .illustration-box{
+    #illustration-box{
         margin-top: 100px;
         padding-top: 50px;
         p{

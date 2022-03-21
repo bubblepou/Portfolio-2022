@@ -13,6 +13,16 @@ btn.forEach((item, index) => {
         document.querySelector('#process_image').src = imgSrc[index];
         for (let i = 0; i < btn.length; i++) {
             btn[i].style.color = '#828282';
+            btn[i].addEventListener("mouseenter", ()=> {
+                btn[i].style.color = '#BDBDBD';
+            })
+            btn[i].addEventListener("mouseleave", ()=> {
+                if (i == index){
+                    btn[i].style.color = '#F8F8F8';
+                } else {
+                    btn[i].style.color = '#828282';
+                }
+            })
         }
         btn[index].style.color = '#F8F8F8';
         let number = index;
