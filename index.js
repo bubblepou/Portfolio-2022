@@ -114,7 +114,9 @@ works.forEach( (element) =>{
         },600)
     });
     element.addEventListener('mouseenter', ()=>{
-        document.querySelector('body').style.backgroundColor = element.getAttribute('data-color');
+        if (window.innerWidth > 500){
+            document.querySelector('body').style.backgroundColor = element.getAttribute('data-color');
+        }
     });
     element.addEventListener('mouseleave', ()=>{
         document.querySelector('body').style.backgroundColor = '#FFF8F1';

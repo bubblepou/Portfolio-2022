@@ -293,31 +293,6 @@ h1 {
   }
 }
 
-/*
-@keyframes typing_60px{
-    0%{width: 0;}
-    12%{width: 60px;}
-    24%{width: 120px;}
-    36%{width: 180px;}
-    48%{width: 240px;}
-    60%{width: 300px;}
-    72%{width: 360px;}
-    84%{width: 420px;}
-    100%{width: fit-content;}
-}
-
-@keyframes typing_36px{
-    0%{width: 0;}
-    12%{width: 36px;}
-    24%{width: 72px;}
-    36%{width: 108px;}
-    48%{width: 144px;}
-    60%{width: 180px;}
-    72%{width: 216px;}
-    84%{width: 252px;}
-    100%{width: fit-content;}
-}
-*/
 .p-L {
   width: 33vw;
   color: #575D67;
@@ -1289,9 +1264,6 @@ h1 {
     padding-top: 30px;
     font-size: 36px;
   }
-  /*.intro h1{
-        animation-name: typing_36px;
-    }*/
   .two-navigations {
     position: static;
     margin: 50px auto;
@@ -1301,10 +1273,6 @@ h1 {
     width: -moz-fit-content;
     width: fit-content;
   }
-  /*.hover-line{
-        margin-top: 0 !important;
-        margin-right: 20px;
-    }*/
   .circle-Box {
     position: static;
     margin: 20px auto 0 auto;
