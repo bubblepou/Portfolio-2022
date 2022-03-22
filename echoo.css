@@ -984,6 +984,11 @@ h2:first-child {
   background-color: #dfd5e2;
 }
 
+.scroll-img {
+  -o-object-position: center;
+     object-position: center;
+}
+
 #enter {
   background-color: #dfd5e2;
 }
