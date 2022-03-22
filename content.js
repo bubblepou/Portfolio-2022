@@ -42,6 +42,9 @@ goHome.forEach((element) => {
         leaveBox.style.animation = 'leave 0.5s forwards';
         setTimeout(() => { document.location.href = element.getAttribute('data-href'); }, 500)
         leaveBox.style.top = '100vh';
+        setTimeout(()=>{
+            document.querySelector('#enter').style.top = '100vh';
+        },600)
     });
 })
 
@@ -50,6 +53,9 @@ next.addEventListener('click', function leave() {
     leaveBox.style.animation = 'leave 0.5s forwards';
     setTimeout(() => { document.location.href = next.getAttribute('data-href'); }, 500)
     leaveBox.style.top = '100vh';
+    setTimeout(()=>{
+        document.querySelector('#enter').style.top = '100vh';
+    },600)
 });
 
 function enter() {
