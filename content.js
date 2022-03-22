@@ -78,7 +78,7 @@ let closeBtn = document.querySelectorAll('.menuClose');
 
 openMenu.forEach((element, index) => {
     element.addEventListener('click', () => {
-        if (window.innerWidth < 500) {
+        if (window.innerWidth <= 500) {
             iconsImg[index].style.zIndex = '10';
             document.querySelector('.go-top').style.zIndex = '-1';
             menu[index].style.right = '-20px';
@@ -89,7 +89,7 @@ openMenu.forEach((element, index) => {
 
 closeBtn.forEach((element, index) => {
     element.addEventListener('click', () => {
-        if (window.innerWidth < 500) {
+        if (window.innerWidth <= 500) {
             menu[index].style.right = 'calc( -20px - 100vw)';
             //menu[index].style.animation = 'menuOut 0.3s forwards';
             setTimeout(() => {
