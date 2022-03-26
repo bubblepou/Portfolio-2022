@@ -511,3 +511,32 @@ h2:first-child{
         right: calc( -20px - 100vw);
     }
 }
+
+// view on //
+
+.viewOn{
+    @include paragraph-L();
+    width: 86vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    a{
+        position: relative;
+        display: block;
+        color: $main-text;
+        &::after{
+            content: "";
+            width: 0;
+            height: 1px; 
+            border-bottom: 1px solid $main-text;
+            position: absolute; 
+            left: 0; 
+            bottom: 0;
+        }
+        &:hover::after{
+            width: 100%;
+            transition: width 0.3s;
+        }
+    }
+}

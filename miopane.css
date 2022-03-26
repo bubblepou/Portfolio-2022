@@ -980,6 +980,59 @@ h2:first-child {
   }
 }
 
+.viewOn {
+  font-family: "Montserrat", "Noto Sans TC", sans-serif;
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 180%;
+  letter-spacing: calc( 22px * 0.03);
+  width: 86vw;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 1100px) and (min-width: 620px) {
+  .viewOn {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 620px) {
+  .viewOn {
+    font-size: 18px;
+  }
+}
+
+.viewOn a {
+  position: relative;
+  display: block;
+  color: #323740;
+}
+
+.viewOn a::after {
+  content: "";
+  width: 0;
+  height: 1px;
+  border-bottom: 1px solid #323740;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.viewOn a:hover::after {
+  width: 100%;
+  -webkit-transition: width 0.3s;
+  transition: width 0.3s;
+}
+
 .background {
   background-color: #FFF2D0;
 }
@@ -1045,6 +1098,7 @@ h2:first-child {
 
 .photos {
   margin-top: 100px;
+  margin-bottom: 150px;
 }
 
 .photos > div:nth-child(1) img {
@@ -1226,5 +1280,20 @@ h2:first-child {
 
 #leave {
   background-color: #FFF2D0;
+}
+
+@media (max-width: 500px) {
+  .viewOn {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (max-width: 500px) {
+  .viewOn a {
+    margin-top: 10px;
+  }
 }
 /*# sourceMappingURL=miopane.css.map */
