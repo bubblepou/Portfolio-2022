@@ -103,12 +103,14 @@ function showSlides(n) {
 let works = document.querySelectorAll('.work');
 let leaveBox = document.querySelector('#leave');
 
+leaveBox.style.top = '100vh';
+
 works.forEach( (element) =>{
     element.addEventListener('click', function leave(){
         leaveBox.style.backgroundColor = element.getAttribute('data-color');
         leaveBox.style.animation = 'leave 0.5s forwards';
         setTimeout(()=>{document.location.href=element.getAttribute('data-href');},500);
-        setTimeout(() => { leaveBox.style.animation = 'none'; }, 600);
+        //setTimeout(() => { leaveBox.style.animation = 'none'; }, 600);
         //leaveBox.style.top = '100vh';
         setTimeout(()=>{
             document.querySelector('#enter').style.top = '100vh';

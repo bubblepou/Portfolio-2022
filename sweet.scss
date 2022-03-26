@@ -91,3 +91,29 @@
 #leave{
     background-color: $sweet;
 }
+
+// view on // 
+
+.viewOn{
+    a{
+        position: relative;
+        display: block;
+        width: fit-content;
+        margin: auto;
+        color: $main-text;
+        @include paragraph-L();
+        &::after{
+            content: "";
+            width: 0;
+            height: 1px; 
+            border-bottom: 1px solid $main-text;
+            position: absolute; 
+            left: 0; 
+            bottom: 0;
+        }
+        &:hover::after{
+            width: 100%;
+            transition: width 0.3s;
+        }
+    }
+}
