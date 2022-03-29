@@ -15,7 +15,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Gelasio:wght@600&family=Montserrat:wght@300;400&family=Noto+Sans+TC:wght@300;400&family=Noto+Serif+TC:wght@600&display=swap"
         rel="stylesheet">
-    
+
     <style>
         @font-face {
             font-family: SweiAliasSansCJKtc-Regular;
@@ -39,40 +39,42 @@
 </head>
 
 <body onload="enter()">
-    <div class="intro">
-        <div>
-            <h1>哈囉，我是梁嘉寶</h1>
+    <div class="top-Div">
+        <div class="circle-Box">
+            <img src="./image/witch2.png">
+            <div id="circle-text">WELCOME TO MY PORTFOLIO ＊ WELCOME TO MY PORTFOLIO ＊ &nbsp; </div>
         </div>
-        <p class="p-L">在這裡您可以看到我的作品，當中展示了 UI / 網頁設計、前端編程、插畫排版等多項技能，希望您看得愉快！</p>
-        <div class="vertical-line"></div>
-    </div>
-
-    <div class="circle-Box">
-        <img src="./image/Po.png">
-        <div id="circle-text">WELCOME TO MY PORTFOLIO ＊ WELCOME TO MY PORTFOLIO ＊ &nbsp; </div>
-    </div>
-
-    <div class="two-navigations">
-        <div class='navigation'>
-            <img src="./image/star1.png">
-            <ul>
-                <span class="hover-line" id="hoverLine">WORK</span>
-                <li class="hover-line">UI / Website Design</li>
-                <li class="hover-line">前端編程</li>
-                <li class="hover-line">書刊雜誌</li>
-                <li class="hover-line">插畫及標準字</li>
-            </ul>
+    
+        <div class="intro">
+            <div>
+                <h1 id="title">梁嘉寶作品集</h1>
+            </div>
+            <div class="two-navigations">
+                <div class='navigation'>
+                    <img src="./image/star1.png">
+                    <ul>
+                        <span class="hover-line" id="hoverLine">WORK</span>
+                        <li class="hover-line">UI / Website Design</li>
+                        <li class="hover-line">前端編程</li>
+                        <li class="hover-line">書刊雜誌</li>
+                        <li class="hover-line">插畫及標準字</li>
+                    </ul>
+                </div>
+                <div class='navigation'>
+                    <img src="./image/star2.png">
+                    <ul>
+                        <span class="hover-line">ABOUT</span>
+                    </ul>
+                </div>
+            </div>    
         </div>
-        <div class='navigation'>
-            <img src="./image/star2.png">
-            <ul>
-                <span class="hover-line">ABOUT</span>
-            </ul>
-        </div>
+    
+        <div id="vertical-line"></div>
+    
     </div>
 
     <div class="work-box scrollTo" id="first-work">
-        <div class="work" data-href="./miopane.html" data-color="#FFF2D0" >
+        <div class="work" data-href="./miopane.html" data-color="#FFF2D0">
             <div class="work-intro">
                 <p>UI / Website Design</p>
                 <h3>Miopane</h3>
@@ -270,11 +272,10 @@
     </div>
 
     <div class="go-top" onclick="goTop()">
-        <svg width="33" height="32" viewBox="0 0 33 32" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path d="M12.9062 6L22.9062 16L12.9062 26" stroke="black" stroke-width="2" stroke-linecap="round"
-                    stroke-linejoin="round" />
-            </svg>
+        <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12.9062 6L22.9062 16L12.9062 26" stroke="black" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+        </svg>
     </div>
 
     <div id="enter"></div>

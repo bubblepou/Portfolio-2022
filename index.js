@@ -46,11 +46,11 @@ function change_Circle_Size(){
     console.log('windowWidth',windowWidth)
     if (windowWidth > 1100){
         var radius = 280;
-    }else if (windowWidth <= 1100 && windowWidth > 970){
+    }else if (windowWidth <= 1100 && windowWidth > 1000){
         var radius = 250;
-    }else if (windowWidth <= 970 && windowWidth > 800){
-        var radius = 220;
-    }else if (windowWidth <= 970 && windowWidth > 620){
+    }else if (windowWidth <= 1000 && windowWidth > 825){
+        var radius = 210;
+    }else if (windowWidth <= 825 && windowWidth > 620){
         var radius = 180;
     }else if (windowWidth <= 620){
         var radius = 140;
@@ -127,7 +127,20 @@ works.forEach( (element) =>{
 })
 
 function enter(){
-    document.querySelector('#enter').style.animation = 'enter 0.8s forwards';
+    let windowWidth = window.innerWidth;
+    if (windowWidth > 700){
+        document.querySelector('#enter').style.animation = 'enter 0.8s forwards';
+        document.querySelector('#title').style.animation = 'typing 0.8s step-start 0.8s forwards';
+        document.querySelector('.two-navigations').style.animation = 'opacityAni 0.8s ease-in 1.6s forwards';
+        document.querySelector('.circle-Box').style.animation = 'opacityAni 0.8s ease-in 2.4s forwards';
+        document.querySelector('#vertical-line').style.animation = 'line-down 0.5s linear 3s forwards';
+    } else {
+        document.querySelector('#enter').style.animation = 'enter 0.8s forwards';
+        document.querySelector('.circle-Box').style.animation = 'opacityAni 0.8s ease-in 0.8s forwards';
+        document.querySelector('#title').style.animation = 'typing 0.8s step-start 1.6s forwards';
+        document.querySelector('.two-navigations').style.animation = 'opacityAni 0.8s ease-in 2.4s forwards';
+        document.querySelector('#vertical-line').style.animation = 'line-down 0.5s linear 3s forwards';
+    }
 }
 
 
