@@ -114,6 +114,10 @@ works.forEach( (element) =>{
         //leaveBox.style.top = '100vh';
         setTimeout(()=>{
             document.querySelector('#enter').style.top = '100vh';
+            document.querySelector('#title').style.width = '100%';
+            document.querySelector('.two-navigations').style.opacity = '1';
+            document.querySelector('.circle-Box').style.opacity = '1';
+            document.querySelector('#vertical-line').style.height = '100%';
         },600)
     });
     element.addEventListener('mouseenter', ()=>{
